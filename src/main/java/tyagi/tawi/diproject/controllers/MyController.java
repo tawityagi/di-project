@@ -2,10 +2,18 @@ package tyagi.tawi.diproject.controllers;
 
 import org.springframework.stereotype.Controller;
 
+import tyagi.tawi.diproject.services.GreetingService;
+
 @Controller
 public class MyController {
+
+    private final GreetingService greetingService;
+
+    MyController(GreetingService greetingService){
+        this.greetingService = greetingService;
+    }
+
     public String sayHello(){
-        System.out.println("Hello World ");
-        return "Hi Folks!!";
+        return greetingService.sayGreeting();
     }
 }
