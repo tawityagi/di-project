@@ -1,5 +1,5 @@
 package tyagi.tawi.diproject.services;
 
-public interface GreetingService {
+public interface ConstructorGreetingService {
     String sayGreeting();
 }

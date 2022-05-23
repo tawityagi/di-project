@@ -3,13 +3,13 @@ package tyagi.tawi.diproject.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
-import tyagi.tawi.diproject.services.GreetingService;
+import tyagi.tawi.diproject.services.ConstructorGreetingService;
 
 @Controller
 public class ConstructorInjectedController {
-    private final GreetingService greetingService;
+    private final ConstructorGreetingService greetingService;
 
-    public ConstructorInjectedController(GreetingService greetingService){
+    public ConstructorInjectedController(ConstructorGreetingService greetingService){
         this.greetingService = greetingService;
     }
 
