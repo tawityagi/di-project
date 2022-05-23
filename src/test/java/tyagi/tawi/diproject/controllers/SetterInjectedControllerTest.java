@@ -2,7 +2,7 @@ package tyagi.tawi.diproject.controllers;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import tyagi.tawi.diproject.services.GreetingServiceImpl;
+import tyagi.tawi.diproject.services.ConstructorGreetingServiceImpl;
 
 
 class SetterInjectedControllerTest {
@@ -11,7 +11,7 @@ class SetterInjectedControllerTest {
     @BeforeEach
     void setUp() {
         controller = new SetterInjectedController();
-        controller.setGreetingService(new GreetingServiceImpl());
+        controller.setGreetingService(new ConstructorGreetingServiceImpl());
     }
 
     @Test

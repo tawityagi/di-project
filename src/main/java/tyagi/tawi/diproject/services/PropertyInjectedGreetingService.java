@@ -3,9 +3,9 @@ package tyagi.tawi.diproject.services;
 import org.springframework.stereotype.Service;
 
 @Service
-public class GreetingServiceImpl implements ConstructorGreetingService {
+public class PropertyInjectedGreetingService implements GreetingService {
     @Override
     public String sayGreeting() {
-        return "Hello World";
+        return "Hello World -- Property";
     }
 }
